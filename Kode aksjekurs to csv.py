@@ -1,0 +1,70 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+pip install yfinance
+
+
+# In[2]:
+
+
+import yfinance as yf
+
+
+# In[3]:
+
+
+tsla = yf.Ticker("TSLA")
+
+
+# In[6]:
+
+
+hist = tsla.history(period="4200d")
+
+
+# In[7]:
+
+
+print(hist)
+
+
+# In[8]:
+
+
+import pandas as pd
+
+
+# In[9]:
+
+
+df = hist
+
+
+# In[16]:
+
+
+df.to_csv('Tesla_price')
+
+
+# In[17]:
+
+
+df_saved_file = pd.read_csv('Tesla_price')
+df_saved_file
+
+
+# In[22]:
+
+
+df.to_csv('Documents/Tesla_price.csv')
+
+
+# In[23]:
+
+
+df_saved_file = pd.read_csv('Documents/Tesla_price.csv')
+df_saved_file
+
