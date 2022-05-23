@@ -1,5 +1,5 @@
 # Masteroppgave-NASDAQ-News
-Sentimentanalyse Nasdaq
+Sentimentanalyse Nasdaq News
 
 Her legger vi ved koden brukt for å: 
 - Importere og filtrere datasetet (R og Python)
